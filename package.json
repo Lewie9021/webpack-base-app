@@ -1,0 +1,26 @@
+{
+  "name": "webpack-base-app",
+  "version": "0.0.1",
+  "description": "Base application setup using Webpack featuring build modes",
+  "author": "Lewis Barnes",
+  "scripts": {
+    "remove": "node server.js -r",
+    "dev": "node server.js -c -s -m dev"
+  },
+  "dependencies": {
+    "commander": "^2.7.1",
+    "express": "^4.12.3",
+    "underscore": "^1.8.3",
+    "rimraf": "^2.3.2",
+    "webpack": "^1.8.4",
+    "style-loader": "^0.10.1",
+    "css-loader": "^0.10.1",
+    "sass-loader": "^1.0.0",
+    "coffee-loader": "^0.7.2",
+    "cjsx-loader": "^2.0.1",
+    "eslint-loader": "^0.9.0",
+    "coffee-lint-loader": "~0.0.x",
+    "file-loader": "^0.8.1",
+    "extract-text-webpack-plugin": "^0.5.0"
+  }
+}
