@@ -4,8 +4,8 @@ var _ = require("underscore");
 var Path = require("path");
 var FS = require("fs");
 
-var Server = require("./src/build/express");
-var Compiler = require("./src/build/webpack");
+var Server = require("./build/express");
+var Compiler = require("./build/webpack");
 
 Commander
     .option("-m, --mode <s>", "Build Mode")
@@ -23,7 +23,7 @@ if (Commander.remove) {
 // Since the rest of the script requires a mode, we will exit here to prevent errors.
 if (!Commander.mode) { return; }
 
-var directory = Path.join(__dirname, "src", "config", Commander.mode);
+var directory = Path.join(__dirname, "config", Commander.mode);
 
 var config = {
     app: require(Path.join(directory, "app.config")),
