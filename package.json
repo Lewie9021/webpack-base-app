@@ -8,19 +8,22 @@
     "dev": "node server.js -c -s -m dev"
   },
   "dependencies": {
-    "commander": "^2.7.1",
-    "express": "^4.12.3",
-    "underscore": "^1.8.3",
-    "rimraf": "^2.3.2",
-    "webpack": "^1.8.4",
-    "style-loader": "^0.10.1",
-    "css-loader": "^0.10.1",
-    "sass-loader": "^1.0.0",
-    "coffee-loader": "^0.7.2",
     "cjsx-loader": "^2.0.1",
+    "coffee-lint-loader": "~0.0.1",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.2",
+    "commander": "^2.7.1",
+    "css-loader": "^0.10.1",
     "eslint-loader": "^0.9.0",
-    "coffee-lint-loader": "~0.0.x",
+    "express": "^4.12.3",
+    "extract-text-webpack-plugin": "^0.5.0",
     "file-loader": "^0.8.1",
-    "extract-text-webpack-plugin": "^0.5.0"
+    "rewire": "^2.3.1",
+    "rewire-webpack": "^1.0.0",
+    "rimraf": "^2.3.2",
+    "sass-loader": "^1.0.0",
+    "style-loader": "^0.10.1",
+    "underscore": "^1.8.3",
+    "webpack": "^1.8.4"
   }
 }

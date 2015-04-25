@@ -1,4 +1,5 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var RewirePlugin = require("rewire-webpack");
 var Path = require("path");
 
 // Shortcut paths.
@@ -51,7 +52,8 @@ module.exports = function(mode) {
 
         plugins: [
             // Extract inline css into a separate 'theme.css' file.
-            new ExtractTextPlugin("theme.css")
+            new ExtractTextPlugin("theme.css"),
+            new RewirePlugin()
         ],
         
         resolve: {
