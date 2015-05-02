@@ -8,6 +8,9 @@
     "dev": "node server.js -c -s -m dev"
   },
   "dependencies": {
+    "lodash": "^3.8.0"
+  },
+  "devDependencies": {
     "cjsx-loader": "^2.0.1",
     "coffee-lint-loader": "~0.0.1",
     "coffee-loader": "^0.7.2",

@@ -3,7 +3,9 @@
         "browser": true
     },
     "globals": {
-        
+        "require": 0,
+        "module": 0,
+        "lodash": 0
     },
     "rules": {
         // 0 - turn the rule off
