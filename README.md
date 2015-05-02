@@ -14,21 +14,19 @@ An example of another build mode could be one called 'live'. This mode would min
 
 ## Pre-loaders
 
-- **ESLint (eslint-loader)** - The pluggable linting utility for JavaScript and JSX.
-- **CoffeeLint (coffee-lint-loader)** - A style checker that helps keep CoffeeScript code clean and consistent. 
+- **ESLint (**eslint-loader**)** - The pluggable linting utility for JavaScript and JSX.
+- **CoffeeLint (**coffee-lint-loader**)** - A style checker that helps keep CoffeeScript code clean and consistent. 
 
 ## Loaders
 
-- **CoffeeScript (coffee-loader)** - A little language that compiles into JavaScript.
-- **JSX With CoffeeScript (cjsx-loader)** - Writing JSX alongside CoffeeScript.
-
-- **Rewire (rewire-loader)** - Easy dependency injection for unit testing.
-- **File (file-loader)** - Require files other than scripts.
-
-- **CSS (css-loader)** - Enhance CSS with import functionality similar to Sass. 
-- **Sass (sass-loader)** - CSS with superpowers.
-- **Style (style-loader)** - Add exports of a module as style to DOM.
+- **CoffeeScript (**coffee-loader**)** - A little language that compiles into JavaScript.
+- **JSX With CoffeeScript (**cjsx-loader**)** - Writing JSX alongside CoffeeScript.
+- **Rewire (**rewire-loader**)** - Easy dependency injection for unit testing.
+- **File (**file-loader**)** - Require files other than scripts.
+- **CSS (**css-loader**)** - Enhance CSS with import functionality similar to Sass. 
+- **Sass (**sass-loader**)** - CSS with superpowers.
+- **Style (**style-loader**)** - Add exports of a module as style to DOM.
 
 ## Plugins
 
-- **Extract Text (extract-text-webpack-plugin)** - Extract text from the bundle into a separate file.
+- **Extract Text (**extract-text-webpack-plugin**)** - Extract text from the bundle into a separate file.
