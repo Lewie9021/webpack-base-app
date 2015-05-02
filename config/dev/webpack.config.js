@@ -10,11 +10,9 @@ var modules = Path.join(root, "build", "webpack");
 var preLoaders = ["eslint", "coffeelint"];
 var loaders = ["css", "sass", "coffee", "cjsx", "file", "dust"];
 
-// TODO: Most likely remove support for .css files. The problem is order isn't respected when concatenated which pretty
-// much the whole point... Instead, you can achive the desired output with Sass by simply converting the file to a
-// partial. That way, you can import in a defined order.
-
-// TODO: Most likely drop support for ESLint as I want to move away from plain JavaScript files.
+// TODO: Most likely remove support for .css files. The problem is order isn't respected when concatenated which is
+// pretty much the whole point... Instead, you can achieve the desired output with Sass by simply converting the file to
+// a partial. That way, you can import in a specific order.
 
 module.exports = function(mode) {
     return {
@@ -59,6 +57,9 @@ module.exports = function(mode) {
         resolve: {
             // Requires originate from the src directory rather than config.
             root: Path.join(root, "src"),
+
+            // Include node_modules and the current config folder to make app.config easily accessible.
+            modulesDirectories: ["node_modules", __dirname],
             
             // Require files without the need to specify following extensions.
             extensions: ["", ".coffee", ".cjsx", ".js", ".dust", ".scss", ".css"]

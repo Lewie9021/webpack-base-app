@@ -1,4 +1,4 @@
-var _ = require("underscore");
+var _ = require("lodash");
 var common = require("../common");
 
 // Extend the common properties with mode specific config.
